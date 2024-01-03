@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--Le decimos al navegador que este archivo es del tipo html:5-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    
+    <!--Este atributo nos ayuda a la hora de incluir caracteres especiales y
+emojis en nuestro proyecto-->
+    <meta name="portafoglio" content="Descripción aquí" />
+    <!--Muestra una descripción de nuestro sitio en los buscadores-->
+    <meta name="robots" content="index,follow" />
+    <!--Le dice a los robots de los navegadores que rastreen nuestra página
+y la muestran en las búsquedas-->
+    <title>mi portafoglio 2</title>
+    <!--Título de nuestra página, no confundir con los H1-H6. Este titulo es
+el que ves en la pestaña del navegador-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Nos ayuda a trabajar en proyectos reponsive-->
+    <link rel="stylesheet" href="css/cosas_portafoglio/estilos/style_intento1.css">
+    <!--Linkea/Enlaza archivos de estilos u otros archivos que necesitemos
+en nuestro proyecto-->
+<script src="https://kit.fontawesome.com/956e43204f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <main>
+        
+        <h1>mi portafolio</h1>
+        <section class="profile">
+            <img src="img_protafoglio\yo por dos.png" style="width:30%;aspect-ratio:1200x1600;" alt="foto mia" />
+            <div class="descripcion">
+                <h2><a href="https://github.com/sarquis12"> <i  class="fa-brands fa-github"></i></a>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </h2>
+                <p>persona apasionada, dispuesta y con una gran dispocision a colaborar, poseo sentido de equipo, con mucho compañerismo y dispuesta a enseñar y aprender</p>
+            </div>
+        </section>
+        <section class="proyectos">
+            <div class="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <div class="botones">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+                <div class="proyecto">
+                    <div class="proyecto1">
+                        <h3>proyecto1</h3>
+                    </div>
+                    <div class="proyecto2">
+                        <h3>proyecto2</h3>
+                    </div>
+                        
+                    <div class="proyecto3">
+                        <h3>proyecto3</h3>
+                    </div>       
+                    <div class="proyecto4">
+                        <h3>proyecto4</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="estudios">
+            <div class="conocimientos">
+                <div>
+                    <h3>conocimientos</h3>
+                    <li>basico html</li>
+                    <li>basico css</li>
+                    <li>basico python</li>
+                    <li>basico c++</li>
+                </div>
+            </div>    
+            <div class="titulos">
+                <div>
+                    <h3>titulos y cursos</h3>
+                    <li>tecnico electronico</li>
+                    <li>curso en python</li>
+                    <li>curso de html</li>
+                    <li>curso de css</li>
+                    <li>ingenieria en sistema(cursando)</li>
+                </div>
+            </div>
+        </section>
+        <section class="contacto">
+            <a href="https://www.linkedin.com/in/elias-yusef-sarquis-boutros-58499418a">
+            <button ><span><i class="fa fa-linkedin" aria-hidden="true"></i></span></button>
+            </a>
+            <p>eliass_sarquiss@hotmail.com</p>
+        </section>
+    </main>
+    
+</body>

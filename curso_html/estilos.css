@@ -1,0 +1,21 @@
+#mostrarDatosToggle {
+    display: none;
+}
+
+/* Estilo para el label que actúa como botón */
+#mostrarDatosBtn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Estilo para ocultar la sección inicialmente */
+#datosSection {
+    display: none;
+}
+
+/* Cuando el checkbox está marcado, muestra la sección */
+#mostrarDatosToggle:checked+#mostrarDatosBtn+#datosSection {
+    display: block;

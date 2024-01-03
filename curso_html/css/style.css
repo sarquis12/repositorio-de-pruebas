@@ -1,0 +1,87 @@
+body{
+    background-color: rgba(72, 72, 100, 0.952);
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 285px ; 
+    grid-template-areas: 
+    "fondo "
+    "main "
+    "proyecto"
+    "formulario ";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+h1{
+    justify-self: center;
+}
+#fondoDelTitulo{
+    display: flex;
+    width: 100%;
+    grid-area: fondo;
+    justify-content: center;
+    position: fixed;
+    animation: progress-grow auto linear;
+    animation-timeline: scroll(root);
+    background-color: rgb(109, 151, 151);
+}
+.titulo{
+    display: block;
+    grid-area: titulo;
+    justify-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.main{
+    border: solid;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "informacion indice"
+    "informacion indice";
+}
+.formulario{
+    border: solid;
+    grid-area: formulario;
+}
+.informacion{
+    grid-area: informacion;
+}
+.indice{
+    grid-area: indice;
+}
+@keyframes progress-grow{
+    0% {opacity: 1;
+        color: rgba(0, 0, 0, 1);}
+    10%{opacity: 0.80; 
+        color:rgba(202, 30, 30, 0.5);}
+    100%{opacity: 0.3;
+        color:rgba(49, 5, 5, 0.3)}
+    
+}
+.proyecto{
+    border: solid;
+    grid-area: proyecto;
+}
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 100px;
+    border: solid;
+
+
+    
+}
+.numero:last-child{
+    
+    border: solid;
+    grid-column-start: 6;
+}
+details[open]{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: antiquewhite;
+}

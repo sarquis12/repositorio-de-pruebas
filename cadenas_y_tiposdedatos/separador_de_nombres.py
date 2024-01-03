@@ -1,0 +1,6 @@
+nombre=input("ingresa tu nombre como se te cante el ojete: ")
+print(nombre.upper())
+print(nombre.lower())
+nombre_apellido=(nombre.split())
+cantidad=(len(nombre_apellido))
+print( ' '.join(nombre_apellido[i].capitalize()for i in range(cantidad)))         

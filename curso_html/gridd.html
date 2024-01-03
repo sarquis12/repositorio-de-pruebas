@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--Le decimos al navegador que este archivo es del tipo html:5-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <!--Este atributo nos ayuda a la hora de incluir caracteres especiales y
+emojis en nuestro proyecto-->
+    <meta name="description" content="Descripción aquí" />
+    <!--Muestra una descripción de nuestro sitio en los buscadores-->
+    <meta name="robots" content="index,follow" />
+    <!--Le dice a los robots de los navegadores que rastreen nuestra página
+y la muestran en las búsquedas-->
+    <title>mi portafoglio</title>
+    <!--Título de nuestra página, no confundir con los H1-H6. Este titulo es
+el que ves en la pestaña del navegador-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Nos ayuda a trabajar en proyectos reponsive-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Linkea/Enlaza archivos de estilos u otros archivos que necesitemos
+en nuestro proyecto-->
+</head>
+<body class="cuerpo">
+    <main>
+        <div id="fondoDelTitulo">
+            <div class="titulo">
+                <h1>Mi Portafoglio</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="informacion">
+            <!--seccion de descripcion de sitio-->
+                <section>
+                    <div>
+                        <h3>descripcion de mi persona:</h3>
+                        <div>
+                            <p>
+                                 soy un trabajador en equipo, con entusiasmo y ganas de aprender.
+                            </p>
+                            <img src="img/yo.jpg" style="width:30%;aspect-ratio:1200x1600;" alt="foto mia"/>
+                        </div>
+                    </div>
+                </section>
+                
+                <!--seccion chistes-->
+                <section>
+                    <h3>chistes</h3>
+                    <details>
+                        <summary class="chiste">que sale de la cruza de un moto y una hormiga?</summary>
+                        <p>sale un hormona :p</p>
+                    </details>
+                    <details>
+                        <summary class="chiste">cuantos psicologos se necesitan para cambiar un foco?</summary>
+                        <p>solo uno, pero el foco debe querer cambiar</p>
+                    </details>
+                </section>
+            </div>
+            <div class="indice">
+                <!--seleccion de lenguaje-->                   
+                <section>
+                <form method="post" action="/">
+                    <datalist id="lenguajes">
+                        <option value="javascript"></option>
+                        <option value="python"></option>
+                        <option value="css"></option>
+                        <option value="html"></option>
+                    </datalist>
+                    <label>
+                        lenguaje por el que quiere preguntar:
+                        <input list="lenguajes" name="lenguajes">
+
+                    </label>
+                </form>
+                </section>
+                <!--seccion de habilidades-->
+                <section>
+                <h3 class="subtitulo">estudios</h3>
+                
+                <h4 class="subtitulo2">terminados</h4>
+                    <li class="lista">
+                        tecnico electronico
+                    </li>
+                    <li class="lista">
+                        curso basico python
+                    </li>
+                <h4 class="subtitulo2">cursando</h4>
+                    <li class="lista">
+                        ingenieria en sistemas
+                    </li>
+                
+                </section>
+            </div>
+        </div>
+        <!--proyectos-->
+        <div class="proyecto">
+            <h3>Proyectos</h3>
+            <div class="proyectos">
+                <details class="numero">
+                    <summary>proyecto1</summary>
+                    <p>detalles</p>
+                </details>
+                <details class="numero">
+                    <summary>proyecto2</summary>
+                    <p>detalles</p>
+                </details>
+                <details class="numero">
+                    <summary>proyecto3</summary>
+                    <p>detalles</p>
+                </details>
+                <details class="numero">
+                    <summary>proyecto4</summary>
+                    <p>detalles</p>
+                </details>
+                <details class="numero">
+                    <summary>proyecto5</summary>
+                    <p>detalles</p>
+                </details>
+            </div>
+            
+
+        </div>
+        <!--seccion formulario de contacto-->
+        <section class="formulario">
+            <h3 class="subtitulo2">formulario de contacto</h3>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>
+                        informacion personal
+                    </legend>
+                    <div>
+                        <label for="name">
+                            nombre:
+                        </label>
+                        <input type="text" name="name" required placeholder="elias sarquis">
+                    </div>
+                    <div>
+                        <label>Email
+                            <input type="email" required placeholder="eliass_sarquiss@hotmail.com">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>informacion adicional</legend>
+                    <div>
+                        <label>
+                            nro telefono:
+                            <input type="tel" placeholder="3624074266" name="telefono">
+                        </label>
+                    </div>
+                </fieldset>
+                <input type="submit" value="enviar">
+            </form>
+        </section>
+    </main>
+    
+</body>
